@@ -1,9 +1,14 @@
+package no.kristiania.httpClient;
+
 import java.io.IOException;
 import java.net.Socket;
 
 public class HttpClient {
 
 
+    public HttpClient(String host, int port, String requestTarget) {
+
+    }
 
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("httpbin.org",80);
@@ -26,5 +31,9 @@ public class HttpClient {
 
 
 
+    }
+
+    public int getStatusCode() {
+        return 0;
     }
 }
